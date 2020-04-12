@@ -1,0 +1,20 @@
+{
+  "name": "awsmern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Deepak <dd43030@gmail.com> (http://tidbit.c.la/)",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "next": "9.3.4",
+    "nprogress": "0.2.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
