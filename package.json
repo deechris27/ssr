@@ -11,6 +11,7 @@
   "author": "Deepak <dd43030@gmail.com> (http://tidbit.c.la/)",
   "license": "MIT",
   "dependencies": {
+    "@zeit/next-css": "1.0.1",
     "bootstrap": "4.4.1",
     "next": "9.3.4",
     "nprogress": "0.2.0",
