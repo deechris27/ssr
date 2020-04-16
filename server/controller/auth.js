@@ -1,3 +1,4 @@
 exports.register = (req,res)=>{
-   console.log('REGISTER COntroller', req.body)
+   console.log('REGISTER Controller', req.body)
+   res.send({data: res});
 };
