@@ -4,9 +4,10 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-require('dotenv').config({path: 'app.env'});
+require('dotenv').config();
 
 const app = express();
+
 
 mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser:true, useUnifiedTopology: true})
 .then(()=>console.log("DB connected"))
@@ -31,10 +32,9 @@ app.use(bodyParser.json());
 //     next();
 // });
 
-app.use(cors({origin: 'http://localhost:3000'}));
+app.use(cors({origin: process.env.CLIENT_URL}));
 
 app.use('/api', authRoutes);
-
 
 const port = process.env.PORT || 5000;
 
